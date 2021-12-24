@@ -31,6 +31,7 @@ react demo file
         rnsf	→	react function with styled-components support
         story	→	Storybook template
         snap	→	Create Jest test snapshot step using Enzyme
+4. import node-sass using npm to use sass in project.       
 
 <!-- for jsx section (Aboutjsx.jsx)-->
 1.

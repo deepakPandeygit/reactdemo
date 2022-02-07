@@ -31,7 +31,9 @@ react demo file
         rnsf	→	react function with styled-components support
         story	→	Storybook template
         snap	→	Create Jest test snapshot step using Enzyme
-4. import node-sass using npm to use sass in project.       
+4. import node-sass using npm to use sass in project. 
+
+5. npm install react-router-dom@6 <!-- for install router v6-->
 
 <!-- for jsx section (Aboutjsx.jsx)-->
 1.

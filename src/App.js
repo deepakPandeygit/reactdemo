@@ -5,17 +5,24 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //for routing body component
 import Routerv6 from './components/sidebar/routerv6';
-import Aboutjsx from './components/sidebar/Aboutjsx'
+import Aboutjsx from './components/sidebar/Aboutjsx';
+import ScssBasic from './components/sidebar/scssBasic';
+import ReactLifeCycle from './components/sidebar/reactLifeCycle';
+
 
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Routerv6 />} />
-        <Route path="/about" element={<Aboutjsx />} />
+        <Route path="/" element={<Routerv6 />} >
+          <Route path="scss" element={<ScssBasic />} />
+          <Route path="about" element={<Aboutjsx />} />
+        </Route>
+        <Route path="lifeCycle" element={<ReactLifeCycle />} />
+        {/* Notice at "/" it renders <Routerv6>. At "/scss" it render <ScssBasic>. */}
 
-        {/* Notice at "/" it renders <App>. At "/invoices" it render <Invoices>. */}
+        {/* <Route path="*" element={}></Route> */}
       </Routes>
     </BrowserRouter>
   );

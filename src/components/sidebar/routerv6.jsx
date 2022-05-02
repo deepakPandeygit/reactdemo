@@ -5,11 +5,6 @@ import { Link, Outlet } from 'react-router-dom';
 function Routerv6() {
   return (
     <>
-
-
-
-
-
       <center><Link to="about">About</Link></center>
       {/* req outlet to use about  */}
       <center><Link to="lifeCycle">LifeCycle</Link></center>
@@ -69,7 +64,7 @@ function Users() {
 </Route>     */}
         </li>
       </ul>
-      <Outlet></Outlet>  {/* used to load child route */}
+      <Outlet></Outlet>  used to load child route
     </>
   )
 }

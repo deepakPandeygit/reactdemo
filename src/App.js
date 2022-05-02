@@ -21,7 +21,13 @@ function App() {
         </Route>
         <Route path="lifeCycle" element={<ReactLifeCycle />} />
         {/* Notice at "/" it renders <Routerv6>. At "/scss" it render <ScssBasic>. */}
-
+        <Route path="*"
+          element={
+            <main style={{ padding: "1rem" }}>
+              <p>There's nothing here!</p>
+            </main>
+          }
+        /> {/*for match only when no other routes do*/}
         {/* <Route path="*" element={}></Route> */}
       </Routes>
     </BrowserRouter>

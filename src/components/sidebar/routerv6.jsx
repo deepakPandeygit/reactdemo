@@ -6,7 +6,7 @@ function Routerv6() {
   return (
     <>
       <center><Link to="about">About</Link></center>
-      {/* req outlet to use about  */}
+      {/* req outlet to use about  */} 
       <center><Link to="lifeCycle">LifeCycle</Link></center>
       {/* no outlet req to use lifeCycle  */}
       <h1>

@@ -8,6 +8,8 @@ import Routerv6 from './components/sidebar/routerv6';
 import Aboutjsx from './components/sidebar/Aboutjsx';
 import ScssBasic from './components/sidebar/scssBasic';
 import ReactLifeCycle from './components/sidebar/reactLifeCycle';
+import OnboardLayout from './components/onboradLayout/onboardLayout';
+import Login from './components/onboradLayout/login';
 
 
 
@@ -20,6 +22,9 @@ function App() {
           <Route path="about" element={<Aboutjsx />} />
         </Route>
         <Route path="lifeCycle" element={<ReactLifeCycle />} />
+        <Route path="onboarding" element={<OnboardLayout />}>
+          <Route path="" element={<Login />} />
+        </Route>
         {/* Notice at "/" it renders <Routerv6>. At "/scss" it render <ScssBasic>. */}
         <Route path="*"
           element={
